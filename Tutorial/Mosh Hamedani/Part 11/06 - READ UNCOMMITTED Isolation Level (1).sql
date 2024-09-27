@@ -1,0 +1,7 @@
+USE sql_store;
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+SELECT *
+FROM customers
+WHERE customer_id = 1;

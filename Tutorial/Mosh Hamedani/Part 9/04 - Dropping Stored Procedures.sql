@@ -1,0 +1,9 @@
+USE sql_invoicing;
+-- DROP PROCEDURE getClients;
+DROP PROCEDURE IF EXISTS getClients;
+
+DELIMITER $$
+CREATE PROCEDURE getClients() BEGIN
+  SELECT * FROM clients;
+END$$
+DELIMITER ;
